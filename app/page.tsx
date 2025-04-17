@@ -2,6 +2,9 @@ import AboutPage from "@/components/about";
 import FadeInSection from "@/components/FadeInSection";
 import HomeSection from "@/components/home";
 import Navigation from "@/components/navigation";
+import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
+import { Projector } from "lucide-react";
 
 export default function Home() {
   return (
@@ -12,12 +15,12 @@ export default function Home() {
         </FadeInSection>
       </div>
 
-      <div className="flex justify-center items-center h-[100vh] px-6 py-4 max-w-[1000px] mx-auto md:justify-start">
+      <div className="flex justify-center items-center h-[100vh] px-6 py-4 max-w-5xl mx-auto">
         <HomeSection />
       </div>
-      {/* <div style={{ border: "0.1px solid white" }}></div> */}
-
       <AboutPage />
+      <Skills />
+      <Projects />
     </div>
   );
 }
