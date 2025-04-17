@@ -1,14 +1,23 @@
+"use client";
+
 import { Download, Code } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import FadeInSection from "./FadeInSection";
+import { motion } from "framer-motion";
 
 export default function HomeSection() {
-    
-    return (
-      <div className=" flex flex-col text-white">
-        <h1 className="text-4xl md:text-6xl font-bold mb-4 text-start">
-          Hello, I'm Kshitij 👋
+  return (
+    <div className="flex justify-between w-full">
+      <div className="flex flex-col text-white ">
+        <h1 className="flex flex-wrap text-4xl md:text-6xl font-bold mb-4 text-start">
+          Hello, I'm&nbsp;
+          <FadeInSection>
+            <span className="inline-block mx-2 text-orange-500">Kshitij</span>
+          </FadeInSection>
+          👋
         </h1>
+
         <h1 className="text-4xl md:text-6xl font-bold mb-4 text-start">
           Full Stack Developer
         </h1>
@@ -75,5 +84,21 @@ export default function HomeSection() {
           </a>
         </div>
       </div>
-    );
+      <motion.div
+        initial={{ opacity: 0, scale: 0.9, y: 50 }}
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+        className="relative p-1 rounded-[20px] bg-gradient-to-br from-[#f76c00] via-orange-500 to-yellow-400 shadow-xl">
+        <div className="rounded-[18px] overflow-hidden bg-black">
+          <Image
+            src="/photo.jpg"
+            alt="Kshitij Profile"
+            width={300}
+            height={500}
+            className="object-cover rounded-[18px]"
+          />
+        </div>
+      </motion.div>
+    </div>
+  );
 }
