@@ -13,7 +13,7 @@ export default function AboutPage() {
   return (
     <main
       id="aboutme"
-      className="min-h-screen px-6 py-16 max-w-3xl mx-auto text-white pt-42">
+      className="min-h-screen px-6 py-16 max-w-5xl mx-auto text-white pt-42">
       <FadeInSection>
         <SectionHeader title="About Me" />
       </FadeInSection>
@@ -51,35 +51,39 @@ export default function AboutPage() {
       </p>
 
       <div className="mt-10 space-y-6">
-        <Card className="bg-slate-300">
-          <div className="p-6">
-            <h2 className="text-xl font-semibold text-orange-500">
-              🎓 Education
-            </h2>
-            <p className="mt-2 text-muted-foreground">
-              B.Tech in CSE @ Lovely Professional University – 2022–2026
-            </p>
-          </div>
-        </Card>
+        <FadeInSection>
+          <Card className="bg-zinc-900">
+            <div className="p-6">
+              <h2 className="text-xl font-semibold text-orange-500">
+                🎓 Education
+              </h2>
+              <p className="mt-2 text-muted-foreground">
+                B.Tech in CSE @ Lovely Professional University – 2022–2026
+              </p>
+            </div>
+          </Card>
+        </FadeInSection>
 
-        <Card className="bg-slate-300">
-          <div className="p-6">
-            <h2 className="text-xl font-semibold text-orange-500">
-              📞 Contact
-            </h2>
-            <p className="mt-2 text-muted-foreground">
-              Email:{" "}
-              <a href="mailto:your.email@example.com" className="underline">
-                your.email@example.com
-              </a>
-              <br />
-              Phone:{" "}
-              <a href="tel:+911234567890" className="underline">
-                +91 12345 67890
-              </a>
-            </p>
-          </div>
-        </Card>
+        <FadeInSection>
+          <Card className="bg-zinc-900">
+            <div className="p-6">
+              <h2 className="text-xl font-semibold text-orange-500">
+                📞 Contact
+              </h2>
+              <p className="mt-2 text-muted-foreground">
+                Email:{" "}
+                <a href="mailto:your.email@example.com" className="underline">
+                  your.email@example.com
+                </a>
+                <br />
+                Phone:{" "}
+                <a href="tel:+911234567890" className="underline">
+                  +91 12345 67890
+                </a>
+              </p>
+            </div>
+          </Card>
+        </FadeInSection>
       </div>
     </main>
   );
