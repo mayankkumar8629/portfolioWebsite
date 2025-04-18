@@ -13,7 +13,7 @@ export default function AboutPage() {
   return (
     <main
       id="aboutme"
-      className="min-h-screen px-6 py-16 max-w-5xl mx-auto text-white pt-42">
+      className="min-h-screen px-6 py-16 max-w-5xl mx-auto text-white pt-42 snap-start">
       <FadeInSection>
         <SectionHeader title="About Me" />
       </FadeInSection>
@@ -43,11 +43,12 @@ export default function AboutPage() {
       </p>
 
       <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-        I’m quick to <span className="font-semibold">adapt</span>, observe
-        systems closely, and thrive in solving{" "}
-        <span className="font-semibold">real-world problems</span> with solid
-        <span className="font-semibold">DSA skills</span> and clean
-        architecture.
+        I’m quick to <span className="font-semibold text-gray-200">adapt</span>,
+        observe systems closely, and thrive in solving{" "}
+        <span className="font-semibold text-gray-200">real-world problems</span>{" "}
+        with solid
+        <span className="font-semibold text-gray-200"> DSA skills </span> and
+        clean architecture.
       </p>
 
       <div className="mt-10 space-y-6">
@@ -72,13 +73,13 @@ export default function AboutPage() {
               </h2>
               <p className="mt-2 text-muted-foreground">
                 Email:{" "}
-                <a href="mailto:your.email@example.com" className="underline">
-                  your.email@example.com
+                <a href="mailto:kshitijyadav2003@gmail.com" className="underline">
+                  kshitijyadav2003@gmail.com
                 </a>
                 <br />
                 Phone:{" "}
-                <a href="tel:+911234567890" className="underline">
-                  +91 12345 67890
+                <a href="tel:+916202251263" className="underline">
+                  +91 6202251263
                 </a>
               </p>
             </div>
