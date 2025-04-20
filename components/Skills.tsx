@@ -3,7 +3,11 @@ import FadeInSection from "./FadeInSection";
 import { Card } from "./ui/card";
 import { SectionHeader } from "./ui/SectionHeader";
 
-export default function Skills() {
+export default async function Skills() {
+  const response = await fetch(
+    "https://backend.takeuforward.org/api/profile/user/leetcode/kshitij_kumar"
+  );
+  const { leetcode_data, username } = await response.json();
   return (
     <div
       id="skills"
@@ -277,14 +281,76 @@ export default function Skills() {
         </FadeInSection>
       </div>
 
-      <FadeInSection>
-        <Card className="grid grid-cols-1 bg-zinc-900 shadow-lg hover:shadow-xl transition-shadow duration-300 px-4">
-          <p className="text-2xl font-bold text-white">
-            Data Structure & Algorithms
-          </p>
-          drth
-        </Card>
-      </FadeInSection>
+      <div className="w-full">
+        <FadeInSection>
+          <Card className="bg-zinc-900 shadow-lg hover:shadow-xl transition-shadow duration-300 px-6 py-6 w-full rounded-2xl">
+            <div className="flex flex-col space-y-2 mb-1">
+              <h2 className="text-2xl font-bold text-white">
+                Data Structures & Algorithms
+              </h2>
+              <div className="flex mt-1">
+                <a
+                  href="https://leetcode.com/u/kshitijyadav2003/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center justify-center gap-2">
+                  <Image
+                    src="/leetcode.png"
+                    alt="github"
+                    width={24}
+                    height={24}
+                  />
+                  <p className="flex text-xl font-semibold text-orange-400 items-center">
+                    LeetCode
+                  </p>
+                </a>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-white text-sm">
+              <div className="bg-zinc-800 p-5 rounded-xl flex flex-col items-center justify-center">
+                <span className="text-xl font-bold text-green-400">
+                  {leetcode_data.totalSolved}
+                </span>
+                <span className="text-gray-300 mt-1">Total Solved</span>
+                <span className="text-xs text-gray-500 mt-1">
+                  {leetcode_data.totalQuestions} Total Qs
+                </span>
+              </div>
+
+              <div className="bg-zinc-800 p-5 rounded-xl flex flex-col items-center justify-center">
+                <span className="text-xl font-bold text-blue-400">
+                  {leetcode_data.easySolved}
+                </span>
+                <span className="text-gray-300 mt-1">Easy</span>
+                <span className="text-xs text-gray-500 mt-1">
+                  {leetcode_data.totalEasy} Total
+                </span>
+              </div>
+
+              <div className="bg-zinc-800 p-5 rounded-xl flex flex-col items-center justify-center">
+                <span className="text-xl font-bold text-yellow-400">
+                  {leetcode_data.mediumSolved}
+                </span>
+                <span className="text-gray-300 mt-1">Medium</span>
+                <span className="text-xs text-gray-500 mt-1">
+                  {leetcode_data.totalMedium} Total
+                </span>
+              </div>
+
+              <div className="bg-zinc-800 p-5 rounded-xl flex flex-col items-center justify-center">
+                <span className="text-xl font-bold text-red-400">
+                  {leetcode_data.hardSolved}
+                </span>
+                <span className="text-gray-300 mt-1">Hard</span>
+                <span className="text-xs text-gray-500 mt-1">
+                  {leetcode_data.totalHard} Total
+                </span>
+              </div>
+            </div>
+          </Card>
+        </FadeInSection>
+      </div>
     </div>
   );
 }
