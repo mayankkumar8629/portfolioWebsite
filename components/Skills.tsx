@@ -5,7 +5,7 @@ import { SectionHeader } from "./ui/SectionHeader";
 
 export default async function Skills() {
   const response = await fetch(
-    "https://backend.takeuforward.org/api/profile/user/leetcode/kshitij_kumar"
+    "https://backend.takeuforward.org/api/profile/user/leetcode/mayankkumar8629"
   );
   const { leetcode_data, username } = await response.json();
   return (
