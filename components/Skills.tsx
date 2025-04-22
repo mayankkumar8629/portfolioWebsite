@@ -8,10 +8,16 @@ export default async function Skills() {
     "https://backend.takeuforward.org/api/profile/user/leetcode/mayankkumar8629"
   );
   const { leetcode_data, username } = await response.json();
+  const gfgData = await fetch(
+    "https://authapi.geeksforgeeks.org/api-get/user-profile-info/?handle=mayankkumau9rs&article_count=false&redirect=true"
+  );
+  const { data } = await gfgData.json();
+
   return (
     <div
       id="skills"
-      className="flex flex-col min-h-screen px-6 py-16 max-w-5xl mx-auto text-white items-start justify-center snap-start">
+      className="flex flex-col min-h-screen px-6 py-16 max-w-5xl mx-auto text-white items-start justify-center snap-start"
+    >
       <FadeInSection>
         <SectionHeader title="Skills" />
       </FadeInSection>
@@ -293,7 +299,8 @@ export default async function Skills() {
                   href="https://leetcode.com/u/kshitijyadav2003/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2">
+                  className="flex items-center justify-center gap-2"
+                >
                   <Image
                     src="/leetcode.png"
                     alt="github"
@@ -345,6 +352,44 @@ export default async function Skills() {
                 <span className="text-gray-300 mt-1">Hard</span>
                 <span className="text-xs text-gray-500 mt-1">
                   {leetcode_data.totalHard} Total
+                </span>
+              </div>
+            </div>
+
+            <div className="flex mt-1">
+              <a
+                href="https://www.geeksforgeeks.org/user/mayankkumau9rs/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center gap-2"
+              >
+                <Image
+                  src="/gfg.svg"
+                  alt="gfg"
+                  width={30}
+                  height={24}
+                  className=""
+                />
+                <p className="flex text-xl font-semibold text-green-600 items-center">
+                  GeekForGeeks
+                </p>
+              </a>
+            </div>
+            <div className="grid grid-cols-2 gap-4 text-white text-sm">
+            <div className="bg-zinc-800 p-5 rounded-xl flex flex-col items-center justify-center">
+                <span className="text-xl font-bold text-green-400">
+                  {data.total_problems_solved}
+                </span>
+                <span className="text-gray-300 mt-1">Total Solved</span>
+                <span className="text-xs text-gray-500 mt-1">
+                </span>
+              </div>
+              <div className="bg-zinc-800 p-5 rounded-xl flex flex-col items-center justify-center">
+                <span className="text-xl font-bold text-blue-400">
+                  {data.score}
+                </span>
+                <span className="text-gray-300 mt-1">Score</span>
+                <span className="text-xs text-gray-500 mt-1">
                 </span>
               </div>
             </div>
