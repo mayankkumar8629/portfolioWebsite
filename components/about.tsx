@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 import FadeInSection from "./FadeInSection";
 
 export const metadata: Metadata = {
-  title: "About | Kshtij Kumar",
+  title: "About | Aman Yadav",
   description:
     "Get to know more about me – background, interests, and journey.",
 };
@@ -73,13 +73,13 @@ export default function AboutPage() {
               </h2>
               <p className="mt-2 text-muted-foreground">
                 Email:{" "}
-                <a href="mailto:kshitijyadav2003@gmail.com" className="underline">
-                  kshitijyadav2003@gmail.com
+                <a href="mailto:amanyadav2131@gmail.com" className="underline">
+                  amanyadav2131@gmail.com
                 </a>
                 <br />
                 Phone:{" "}
-                <a href="tel:+916202251263" className="underline">
-                  +91 6202251263
+                <a href="tel:+917982831799" className="underline">
+                  +91 7982831799
                 </a>
               </p>
             </div>

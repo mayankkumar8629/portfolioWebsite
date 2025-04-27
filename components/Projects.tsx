@@ -13,11 +13,11 @@ export default function Projects() {
 
       <div className="flex w-full gap-6 flex-col mb-10">
         <ProjectCard
-          link="https://testimonials-delta-ten.vercel.app"
-          github="https://github.com/kshitij-y/testimonials"
-          name="Testimonials"
-          learning="Google Oauth, NextJS and TypeScript, middleware"
-          desc="A website to get and showcase testimonials from customers"
+          link=""
+          github="https://github.com/aman717273/Expense-Wallet"
+          name="Expense Wallet"
+          learning="MongoDB, Express, React, Node.js, JWT, and Tailwind CSS"
+          desc="A simple website to manage your expenses and income"
           techStack={[
             "nextjs.svg",
             "postgresql.svg",
@@ -27,11 +27,11 @@ export default function Projects() {
           ]}
         />
         <ProjectCard
-          link="https://payment-app-me18.onrender.com"
-          github="https://github.com/kshitij-y/payment-app"
-          name="Wallet"
+          link=""
+          github="https://github.com/aman717273/FITFUSION"
+          name="FITFUSION"
           learning="I learned about reactJS and JWT and Prisma and CRUD operations"
-          desc="A simple website to make payments through wallets"
+          desc="A simple website to manage your fitness and health"
           techStack={[
             "reactjs.svg",
             "mongo.svg",
@@ -39,13 +39,13 @@ export default function Projects() {
             "tailwindcss.svg",
           ]}
         />
-        <div className="text-2xl text-white font-medium">In development..</div>
+        <div className="text-2xl text-white font-medium"></div>
         <ProjectCard
-          link="https://github.com/kshitij-y/sellmate"
-          github="https://github.com/kshitij-y/sellmate"
-          name="SellMate: Buy Sell and Auction"
-          learning="I learned about Redux, TanStack, Better-Auth"
-          desc="A website for buying and selling products and can also host Auctions"
+          link=""
+          github="https://github.com/aman717273/Pustakalaya-main"
+          name="Pustakalaya"
+          learning="I learned about Firebase, Mern, Better-Auth"
+          desc="A website for library management system"
           techStack={[
             "nextjs.svg",
             "postgresql.svg",

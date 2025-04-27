@@ -313,10 +313,11 @@ export default async function Skills() {
                 </a>
               </div>
             </div>
-
+            
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-white text-sm">
               <div className="bg-zinc-800 p-5 rounded-xl flex flex-col items-center justify-center">
                 <span className="text-xl font-bold text-green-400">
+                  
                   {leetcode_data.totalSolved}
                 </span>
                 <span className="text-gray-300 mt-1">Total Solved</span>

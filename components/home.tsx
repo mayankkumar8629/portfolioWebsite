@@ -14,7 +14,7 @@ export default function HomeSection() {
         <h1 className="flex flex-wrap text-4xl md:text-6xl font-bold mb-4 text-start">
           Hello, I'm&nbsp;
           <FadeInSection>
-            <span className="inline-block mx-2 text-orange-500">Mayank</span>
+            <span className="inline-block mx-2 text-orange-500">Aman</span>
           </FadeInSection>
           👋
         </h1>
@@ -39,12 +39,12 @@ export default function HomeSection() {
             View Projects
           </Link> */}
           <Link
-            href="mailto:mayankkumarverma306@gmail.com"
+            href="mailto:amanyadav2131@gmail.com"
             className="px-6 py-2 rounded-full font-semibold text-white bg-[#f76c00] hover:opacity-90 transition">
             Lets connect
           </Link>
           <Link
-            href="/resume.pdf"
+            href="/aman_cv.pdf"
             download
             className="flex items-center gap-2 px-6 py-2 rounded-full font-semibold border border-[#f76c00] text-[#f76c00] hover:bg-[#f76c00] hover:text-white transition">
             <Download size={18} />
@@ -55,7 +55,7 @@ export default function HomeSection() {
         {/* Social Links */}
         <div className="flex flex-wrap gap-4 justify-start py-4">
           <a
-            href="https://www.linkedin.com/in/mayank-kumarr14/"
+            href="https://www.linkedin.com/in/aman2131yadav/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center w-12 h-12 rounded-full hover:bg-[#004182] transition">
@@ -63,23 +63,23 @@ export default function HomeSection() {
           </a>
 
           <a
-            href="https://github.com/mayankkumar8629"
+            href="https://github.com/aman717273"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center w-12 h-12 rounded-full ] hover:bg-[#181d22] transition">
             <Image src="/github.svg" alt="github" width={24} height={24} />
           </a>
 
-          <a
+          {/* <a
             href="https://leetcode.com/u/mayankkumar8629/"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center w-12 h-12 rounded-full hover:bg-[#c67d16] transition">
             <Image src="/leetcode.png" alt="github" width={24} height={24} />
-          </a>
+          </a> */}
 
           <a
-            href="https://instagram.com/mayankkumar8629"
+            href="https://instagram.com/_justt_aman"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center w-12 h-12 rounded-full hover:bg-[#c13584] transition">
@@ -91,8 +91,8 @@ export default function HomeSection() {
       <div className="hidden  overflow-hidden  bg-black lg:block shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out ">
         <FadeInSection>
           <Image
-            src="/photo.jpg"
-            alt="Mayank Kumar"
+            src="/aman.jpeg"
+            alt="Aman Yadav"
             width={300}
             height={500}
             className="object-cover rounded-[10px] border-3 border-orange-500 transition-transform duration-500 ease-in-out transform hover:scale-105"
