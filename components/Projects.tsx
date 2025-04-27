@@ -41,7 +41,7 @@ export default function Projects() {
         />
         <div className="text-2xl text-white font-medium"></div>
         <ProjectCard
-          link="pustakalaya-lake.vercel.app"
+          link="https://pustakalaya-lake.vercel.app/"
           github="https://github.com/aman717273/Pustakalaya-main"
           name="Pustakalaya"
           learning="I learned about Firebase, Mern, Better-Auth"
