@@ -13,7 +13,7 @@ export default function Projects() {
 
       <div className="flex w-full gap-6 flex-col mb-10">
         <ProjectCard
-          link=""
+          link="https://github.com/aman717273/Expense-Wallet"
           github="https://github.com/aman717273/Expense-Wallet"
           name="Expense Wallet"
           learning="MongoDB, Express, React, Node.js, JWT, and Tailwind CSS"
@@ -27,7 +27,7 @@ export default function Projects() {
           ]}
         />
         <ProjectCard
-          link=""
+          link="https://github.com/aman717273/FITFUSION"
           github="https://github.com/aman717273/FITFUSION"
           name="FITFUSION"
           learning="I learned about reactJS and JWT and Prisma and CRUD operations"
@@ -41,7 +41,7 @@ export default function Projects() {
         />
         <div className="text-2xl text-white font-medium"></div>
         <ProjectCard
-          link=""
+          link="pustakalaya-lake.vercel.app"
           github="https://github.com/aman717273/Pustakalaya-main"
           name="Pustakalaya"
           learning="I learned about Firebase, Mern, Better-Auth"
