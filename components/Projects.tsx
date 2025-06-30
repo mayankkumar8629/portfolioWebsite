@@ -13,45 +13,42 @@ export default function Projects() {
 
       <div className="flex w-full gap-6 flex-col mb-10">
         <ProjectCard
-          link="https://testimonials-delta-ten.vercel.app"
-          github="https://github.com/kshitij-y/testimonials"
-          name="Testimonials"
-          learning="Google Oauth, NextJS and TypeScript, middleware"
-          desc="A website to get and showcase testimonials from customers"
-          techStack={[
-            "nextjs.svg",
-            "postgresql.svg",
-            "prisma.svg",
-            "tailwindcss.svg",
-            "typescript.svg",
-          ]}
-        />
-        <ProjectCard
-          link="https://payment-app-me18.onrender.com"
-          github="https://github.com/kshitij-y/payment-app"
-          name="Wallet"
-          learning="I learned about reactJS and JWT and Prisma and CRUD operations"
-          desc="A simple website to make payments through wallets"
+          link="https://github.com/mayankkumar8629/WanderLust"
+          github="https://github.com/mayankkumar8629/VeggieTO"
+          name="VeggioTO"
+          learning="MongoDB, Express, React, Node, Redis, Web Socket, Event Architecture,"
+          desc="A Microservice based D2C E-Commerce Platform"
           techStack={[
             "reactjs.svg",
             "mongo.svg",
-            "prisma.svg",
+            "javascript.svg",
             "tailwindcss.svg",
+            
+          ]}
+        />
+        <ProjectCard
+          link="https://github.com/mayankkumar8629/WanderLust"
+          github="https://github.com/mayankkumar8629/mediConnect"
+          name="MediConnect "
+          learning="I learned about Microservice Architecture "
+          desc="Multi-Role Healthcare management System build on Microservice Architecture"
+          techStack={[
+            "reactjs.svg",
+            "mongo.svg",
+            "tailwindcss.svg",
+            "javascript.svg"
           ]}
         />
         <div className="text-2xl text-white font-medium">In development..</div>
         <ProjectCard
-          link="https://github.com/kshitij-y/sellmate"
-          github="https://github.com/kshitij-y/sellmate"
-          name="SellMate: Buy Sell and Auction"
-          learning="I learned about Redux, TanStack, Better-Auth"
-          desc="A website for buying and selling products and can also host Auctions"
+          link="https://github.com/mayankkumar8629/WanderLust"
+          github="https://github.com/mayankkumar8629/WanderLust"
+          name="WanderLust"
+          learning="I learned about EJS and CRUD Operations"
+          desc="A web based platform for listing and booking short-term stays and experiences"
           techStack={[
-            "nextjs.svg",
-            "postgresql.svg",
-            "prisma.svg",
-            "tailwindcss.svg",
-            "typescript.svg",
+            "mongo.svg",
+            "javascript.svg"
           ]}
         />
       </div>

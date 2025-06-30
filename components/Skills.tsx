@@ -8,10 +8,10 @@ export default async function Skills() {
     "https://backend.takeuforward.org/api/profile/user/leetcode/mayankkumar8629"
   );
   const { leetcode_data, username } = await response.json();
-  const gfgData = await fetch(
-    "https://authapi.geeksforgeeks.org/api-get/user-profile-info/?handle=mayankkumau9rs&article_count=false&redirect=true"
-  );
-  const { data } = await gfgData.json();
+  // const gfgData = await fetch(
+  //   "https://authapi.geeksforgeeks.org/api-get/user-profile-info/?handle=mayankkumau9rs&article_count=false&redirect=true"
+  // );
+  // const { data } = await gfgData.json();
 
   return (
     <div
@@ -40,7 +40,7 @@ export default async function Skills() {
                   React
                 </span>
               </div>
-              <div className="relative group w-fit">
+              {/* <div className="relative group w-fit">
                 <Image
                   src="/nextjs.svg"
                   alt="NextJS Logo"
@@ -52,7 +52,7 @@ export default async function Skills() {
                 <span className="absolute top-full left-1/2 -translate-x-1/2 mt-1 px-2 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-10">
                   Next
                 </span>
-              </div>
+              </div> */}
               <div className="relative group w-fit">
                 <Image
                   src="/tailwindcss.svg"
@@ -117,7 +117,7 @@ export default async function Skills() {
               </div>
 
               {/* Prisma */}
-              <div className="relative group w-fit">
+              {/* <div className="relative group w-fit">
                 <Image
                   src="/prisma.svg"
                   alt="Prisma Logo"
@@ -128,7 +128,7 @@ export default async function Skills() {
                 <span className="absolute top-full left-1/2 -translate-x-1/2 mt-1 px-2 py-1 text-sm text-white bg-black rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-10">
                   Prisma
                 </span>
-              </div>
+              </div> */}
             </div>
           </Card>
         </FadeInSection>
@@ -296,7 +296,7 @@ export default async function Skills() {
               </h2>
               <div className="flex mt-1">
                 <a
-                  href="https://leetcode.com/u/kshitijyadav2003/"
+                  href="https://leetcode.com/u/mayankkumar8629/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2"
@@ -313,10 +313,11 @@ export default async function Skills() {
                 </a>
               </div>
             </div>
-
+            
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-white text-sm">
               <div className="bg-zinc-800 p-5 rounded-xl flex flex-col items-center justify-center">
                 <span className="text-xl font-bold text-green-400">
+                  
                   {leetcode_data.totalSolved}
                 </span>
                 <span className="text-gray-300 mt-1">Total Solved</span>
@@ -376,7 +377,7 @@ export default async function Skills() {
               </a>
             </div>
             <div className="grid grid-cols-2 gap-4 text-white text-sm">
-            <div className="bg-zinc-800 p-5 rounded-xl flex flex-col items-center justify-center">
+            {/* <div className="bg-zinc-800 p-5 rounded-xl flex flex-col items-center justify-center">
                 <span className="text-xl font-bold text-green-400">
                   {data.total_problems_solved}
                 </span>
@@ -391,7 +392,7 @@ export default async function Skills() {
                 <span className="text-gray-300 mt-1">Score</span>
                 <span className="text-xs text-gray-500 mt-1">
                 </span>
-              </div>
+              </div> */}
             </div>
           </Card>
         </FadeInSection>
