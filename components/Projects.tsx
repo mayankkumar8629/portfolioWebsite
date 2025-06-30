@@ -39,7 +39,7 @@ export default function Projects() {
             "javascript.svg"
           ]}
         />
-        <div className="text-2xl text-white font-medium">In development..</div>
+        <div className="text-2xl text-white font-medium"></div>
         <ProjectCard
           link="https://github.com/mayankkumar8629/WanderLust"
           github="https://github.com/mayankkumar8629/WanderLust"

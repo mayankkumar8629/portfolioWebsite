@@ -78,13 +78,7 @@ export default function HomeSection() {
             <Image src="/leetcode.png" alt="github" width={24} height={24} />
           </a>
 
-          <a
-            href="https://instagram.com/mayankkumar8629"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center justify-center w-12 h-12 rounded-full hover:bg-[#c13584] transition">
-            <Image src="/instagram.svg" alt="github" width={24} height={24} />
-          </a>
+         
         </div>
       </div>
       {/* My Image */}

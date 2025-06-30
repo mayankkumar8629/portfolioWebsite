@@ -61,6 +61,13 @@ export default function AboutPage() {
               <p className="mt-2 text-muted-foreground">
                 B.Tech in CSE @ Lovely Professional University – 2022–2026
               </p>
+              <p className="mt-2 text-muted-foreground">
+                Senior Secondary @ St. Xavier's School, Gorakhpur,UP– 2020–2021
+              </p>
+              <p className="mt-2 text-muted-foreground">
+                Matriculation @ St. Xavier's School, Gorakhpur,UP– 2018–2019
+              </p>
+              
             </div>
           </Card>
         </FadeInSection>
