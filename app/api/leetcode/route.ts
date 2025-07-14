@@ -1,5 +1,5 @@
 export async function GET() {
-  const username = "kshitijyadav2003";
+  const username = "mayankkumar8629";
 
   const query = `
     query getUserProfile($username: String!) {
